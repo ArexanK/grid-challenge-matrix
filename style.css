@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-// mobile first
+/* mobile first */
 h1,
 h2,
 h3 {
@@ -30,21 +30,24 @@ img {
   height: auto;
 }
 
-//tablet 
-@media only screen and (min-width: 767px) {
+/* tablet */
+@media only screen and (min-width: 768px) {
   .grid-list,
   .flexbox-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    max-width: 600px;
   }
 }
-//desktop
+
+/* desktop */
 @media only screen and (min-width: 1024px) {
   .grid-list,
   .flexbox-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    max-width: 1200px;
   }
 }
